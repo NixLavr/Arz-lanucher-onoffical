@@ -4,7 +4,7 @@
 Arz-lanucher-onoffical это неофициальный лаунчер для проекта Arizona Games (Arizona RP,Rodina RP) c поддержкой Windows и Linux cистем
 
 ## Установка
-Скачайте [архив](https://github.com/NixLavr/Arz-lanucher-onoffical/releases)] под вашу систему и архитектуру
+Скачайте [архив](https://github.com/NixLavr/Arz-lanucher-onoffical/releases) под вашу систему и архитектуру
 ## Linux
 Установите пакет libwebkit2gtk-4.1
 ### Debian / Ubuntu
