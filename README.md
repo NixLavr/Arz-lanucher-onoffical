@@ -1,19 +1,22 @@
-# README
+# Arz-lanucher-onoffical
 
-## About
+## Описание
+Arz-lanucher-onoffical это неофициальный лаунчер для проекта Arizona Games (Arizona RP,Rodina RP) c поддержкой Windows и Linux cистем
 
-This is the official Wails React-TS template.
-
-You can configure the project by editing `wails.json`. More information about the project settings can be found
-here: https://wails.io/docs/reference/project-config
-
-## Live Development
-
-To run in live development mode, run `wails dev` in the project directory. This will run a Vite development
-server that will provide very fast hot reload of your frontend changes. If you want to develop in a browser
-and have access to your Go methods, there is also a dev server that runs on http://localhost:34115. Connect
-to this in your browser, and you can call your Go code from devtools.
-
-## Building
-
-To build a redistributable, production mode package, use `wails build`.
+## Установка
+Скачайте [архив](https://github.com/NixLavr/Arz-lanucher-onoffical/releases)] под вашу систему и архитектуру
+## Linux
+Установите пакет libwebkit2gtk-4.1
+### Debian / Ubuntu
+```bash
+sudo apt update
+sudo apt install libwebkit2gtk-4.1-dev
+```
+### Arch
+```bash
+sudo pacman -S webkit2gtk
+```
+### Fedora
+```bash
+sudo dnf install webkit2gtk4.1-devel
+```
