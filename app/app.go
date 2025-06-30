@@ -1,8 +1,10 @@
-package main
+package app
 
 import (
 	"context"
 	"fmt"
+	"os"
+	"runtime"
 )
 
 // App struct
@@ -17,8 +19,18 @@ func NewApp() *App {
 
 // startup is called when the app starts. The context is saved
 // so we can call the runtime methods
-func (a *App) startup(ctx context.Context) {
+func (a *App) Startup(ctx context.Context) {
 	a.ctx = ctx
+}
+
+func (a *App) CheckWayland() bool {
+	if runtime.GOOS == "linux" {
+		sessionType := os.Getenv("GDK_BACKEND")
+		if sessionType == "wayland" {
+			return true
+		}
+	}
+	return false
 }
 
 // Greet returns a greeting for the given name
